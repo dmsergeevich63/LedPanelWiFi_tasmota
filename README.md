@@ -14,8 +14,11 @@
 6. Подключаем GPIO4(Power5) ESP32-C3 Super Mini r часам на прошивке LedPanelWiFi.
 7. Преходим в консоль и вводим ниже приведённые правила. 
    Rule1 ON Power1#State=1 DO Backlog Power5 0; Delay 2; Power5 1;  Power5 0; Delay 1; Power5 1;  Delay 5; Power1 0   ENDON // двойное нажатие
+   
    Rule2 ON Power2#State=1 DO Backlog Power5 0; Delay 2; Power5 1; Delay 5; Power2 0  ENDON // короткое удержание // выключает матрицу
+   
    Rule3 ON Power3#State=1 DO Backlog Power5 0; Delay 2; Power5 1; Power5 0; Delay 5; Power5 1; Delay 5; Power3 0  ENDON //ночной режим
+   
 9. Они написаны смотря на описание действий. https://github.com/vvip-68/LedPanelWiFi/blob/258eb5e8a8434ced2d78e93a1d32cdb76f0bd9ca/README.md?plain=1#L172
 ![image](https://github.com/user-attachments/assets/ed28a510-e50d-48b7-8a06-852556a53fac)
 11. Применяем правила.
