@@ -30,6 +30,8 @@
 13. Не знаю почему, но для корректной работы нужно правил 1-4 необходимо сначало включить GPIO4(Power5).
  ![image](https://github.com/user-attachments/assets/67162830-c557-4b19-8025-fe47844571c8)
 
+Дальше можно подключить ESP32-C3 Super Mini на tasmota к Яндекс Станции через Matter и Home Assistant через MQTT. 
+
 
 Правило, которое мне не понадобилось.
 //Rule2 ON Power2#State=1 DO Backlog Power5 0; Delay 1; Power5 1;  Power5 0; Delay 1; Power5 1;  Power5 0; Delay 1; Power5 1;  Power5 0; Delay 1; Power5 1; Delay 5; Power2 0   ENDON // показ ip, нах не надо
