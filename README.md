@@ -9,10 +9,10 @@
 2. Задаём пины.
 
    ![image](https://github.com/user-attachments/assets/2bc01814-6188-4ff3-9a3d-51c7ea32e404)
-4. задаём в прошивке LedPanelWiFi пин для кнопки.
+4. Задаём в прошивке LedPanelWiFi пин для кнопки.
    ![image](https://github.com/user-attachments/assets/7dc4e148-771d-4343-ba7d-1af50e4aaad0)
-6. Подключаем GPIO4(Power5) ESP32-C3 Super Mini r часам на прошивке LedPanelWiFi.
-7. Преходим в консоль и вводим ниже приведённые правила. 
+6. Подключаем GPIO4(Power5) ESP32-C3 Super Mini к часам на прошивке LedPanelWiFi.
+7. Переходим в консоль и вводим ниже приведённые правила. 
    Rule1 ON Power1#State=1 DO Backlog Power5 0; Delay 2; Power5 1;  Power5 0; Delay 1; Power5 1;  Delay 5; Power1 0   ENDON // двойное нажатие
    
    Rule2 ON Power2#State=1 DO Backlog Power5 0; Delay 2; Power5 1; Delay 5; Power2 0  ENDON // короткое удержание // выключает матрицу
