@@ -1,7 +1,8 @@
 # LedPanelWiFi_tasmota
 Управление часами LedPanelWiFi через Home Assistant и Matter.
 
-Прошивка LedPanelWiFi очень большая, изменение вносить в неё изменения очень большая работа. Поэтому я решил эмулировать нажатие предусмотренной кнопки через ESP32-C3 Super Mini.
+Прошивка LedPanelWiFi очень большая,  вносить в неё изменения очень большая работа. Поэтому я решил эмулировать нажатие предусмотренной кнопки через ESP32-C3 Super Mini.
+![image](https://github.com/user-attachments/assets/8d1660d1-6fbe-4c73-afb5-056218917b9e)
 
 Установка: 
 1. Прошиваем tasmota через https://tasmota.github.io/install/. Подключем устройство к WIFI.
